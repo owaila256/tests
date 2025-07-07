@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Arcadia - Apply</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #1e1e2f;
+      color: #f4f1e9;
+      margin: 0;
+      padding: 0;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    body.light {
+      background-color: #f4f1e9;
+      color: #1e1e2f;
+    }
+
+    header {
+      background-color: #2e2e4f;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #a98c5f;
+      position: relative;
+    }
+
+    body.light header {
+      background-color: #eaeaea;
+      border-bottom: 3px solid #7a5c2d;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      font-family: 'Cinzel', serif;
+    }
+
+    .theme-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #a98c5f;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #3e3e5f;
+      padding: 10px 0;
+    }
+
+    body.light nav {
+      background-color: #d4d4d4;
+    }
+
+    .btn-nav {
+      background-image: url('button.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 180px;
+      height: 60px;
+      color: #000;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      line-height: 60px;
+      margin: 0 10px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-nav:hover {
+      filter: brightness(1.1);
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      transition: background-color 0.3s;
+    }
+
+    .apply-button {
+      margin-top: 40px;
+    }
+
+    .apply-button a {
+      background-color: #5865F2;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .apply-button a:hover {
+      background-color: #4752c4;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Apply to Arcadia</h1>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+  </header>
+
+  <nav>
+    <a href="index.html" class="btn-nav">HOME</a>
+    <a href="application.html" class="btn-nav">APPLY</a>
+    <a href="members.html" class="btn-nav">MEMBERS</a>
+  </nav>
+
+  <section>
+    <h2>🌿 Ready to Join Arcadia? ⚔️</h2>
+    <p>Click the button below to fill out our official Google Form and apply to become part of the Arcadia legacy.</p>
+
+    <div class="apply-button">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDQDs5AtTRV42ehUV80l94SWHdr9E1vjKyuiku_4Wspsv7ng/viewform" target="_blank">
+        Apply via Google Form
+      </a>
+    </div>
+  </section>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+    }
+  </script>
+</body>
+</html>
